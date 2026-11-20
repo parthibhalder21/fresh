@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "description": "Rules the risk engine uses to flag at-risk stock and price it for local merchants. Any change to this file must pass the waste gate in CI.",
+  "lookaheadDays": 5,
+  "highRiskDays": 2,
+  "safetyBuffer": 0.15,
+  "merchantRadiusKm": 6,
+  "ngoRadiusKm": 15,
+  "ngoEscalationDaysLeft": 0,
+  "pickupWindowHours": 6,
+  "discountSchedule": [
+    {
+      "minDaysLeft": 4,
+      "discountPct": 30
+    },
+    {
+      "minDaysLeft": 3,
+      "discountPct": 40
+    },
+    {
+      "minDaysLeft": 2,
+      "discountPct": 55
+    },
+    {
+      "minDaysLeft": 1,
+      "discountPct": 70
+    },
+    {
+      "minDaysLeft": 0,
+      "discountPct": 85
+    }
+  ],
+  "fulfilment": {
+    "deliveryFee": 25,
+    "freeDeliveryAbove": 199,
+    "deliveryBaseMinutes": 12,
+    "deliveryMinutesPerKm": 4,
+    "pickupReadyMinutes": 15
+  }
+}

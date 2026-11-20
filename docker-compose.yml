@@ -1,0 +1,14 @@
+services:
+  freshloop:
+    build: .
+    image: freshloop:local
+    ports:
+      - "4000:4000"
+    environment:
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in a .env file (see .env.example)}
+    volumes:
+      - freshloop-data:/data
+    restart: unless-stopped
+
+volumes:
+  freshloop-data:

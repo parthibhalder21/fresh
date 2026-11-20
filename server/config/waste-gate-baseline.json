@@ -1,0 +1,11 @@
+{
+  "policyVersion": "1.0.0",
+  "updatedAt": "2026-11-19",
+  "items": 600,
+  "wastePct": 9.05,
+  "baselineWastePct": 33.41,
+  "stockoutPct": 1.12,
+  "rebalancedPct": 16.14,
+  "soldToMerchantsPct": 4.78,
+  "donatedPct": 4.22
+}
